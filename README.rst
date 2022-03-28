@@ -33,32 +33,39 @@ Usage
 -----
 ::
 
- hostchk [-h] [-i INPUT] [-o OUTPUT] [-p] [-a] [-l] [-s] [-f] [-v]
-              [urls [urls ...]]
+hostchk.py [-h] -in INFILE -out OUTPFILE
 
- positional arguments:
-   urls
+[-proto PROTOCOL]
 
- optional arguments:
-   -h, --help                   show this help message and exit
-   -i INPUT, --input INPUT      Read input from a file
-   -o OUTPUT, --output OUTPUT   Save output to a file
-   -p, --parse                  Follow links listed in .xml URLs
-   -l, --list                   Print URLs without checking them
-   -v, --version                Print the version number
+
+
+options:
+
+  -h, --help       show this help message and exit
+
+  -in INFILE       The input file name
+
+  -out OUTPFILE    The output file name
+
+  -proto PROTOCOL  The protocol to scan with
+
+
+
+ 
+ 
 
 
 Examples
 ~~~~~~~~
-Check a list of URLs from a file (one URL per line)::
 
 
 
-Check the status of a sitemap file and all the URLs listed in it::
 
 
 
-List the URLs in a file without checking their HTTP status::
+
+
+
 
 
 
