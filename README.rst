@@ -21,7 +21,7 @@ hostchk is not yet available on PyPI and cant be installed using pip for now
 
 
 
-Hostchk does requires 3rd party packages to run. So it can also be
+Hostchk requires 3rd party packages to run. So it can also be
 cloned from GitHub and run as::
 
     $ git clone https://github.com/brigxt0/hostchk.git
@@ -57,7 +57,10 @@ Usage
 
 Examples
 ~~~~~~~~
-
+Run the script in its home directory with url in a file named hosts
+and output file called status with https requests. 
+::
+ python3 hostchk.py -in files -out status -proto https
 
 
 
