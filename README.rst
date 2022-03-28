@@ -60,7 +60,7 @@ Examples
 Run the script in its home directory with url in a file named hosts
 and output file called status with https requests. 
 ::
- python3 hostchk.py -in files -out status -proto https
+ python3 hostchk.py -in files -out status -proto https://
 
 
 
