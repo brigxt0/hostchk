@@ -33,21 +33,21 @@ Usage
 -----
 ::
 
-hostchk.py [-h] -in INFILE -out OUTPFILE
+ hostchk.py [-h] -in INFILE -out OUTPFILE
 
-[-proto PROTOCOL]
+ [-proto PROTOCOL]
 
 
 
-options:
+ options:
 
-  -h, --help       show this help message and exit
+   -h, --help       show this help message and exit
 
-  -in INFILE       The input file name
+   -in INFILE       The input file name
 
-  -out OUTPFILE    The output file name
+   -out OUTPFILE    The output file name
 
-  -proto PROTOCOL  The protocol to scan with
+   -proto PROTOCOL  The protocol to scan with
 
 
 
