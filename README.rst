@@ -26,7 +26,7 @@ cloned from GitHub and run as::
 
     $ git clone https://github.com/brigxt0/hostchk.git
     $ cd hostchk
-    $ pip3 install requirements.txt
+    $ pip3 install -r requirements.txt
     $ python3 hostchk.py -in <input> -out <output> -proto <protocol>
 
 Usage
