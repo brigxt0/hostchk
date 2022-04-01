@@ -1,11 +1,17 @@
 from setuptools import setup
 import versioneer
+import pathlib
 
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
+here = pathlib.Path(__file__).parent.resolve()
+long_description = (here / "README.rst").read_text(encoding="utf-8")
+
+
+#with open('README.rst') as readme_file:
+    #readme = readme_file.read()
+
+#with open('HISTORY.rst') as history_file:
+    #history = history_file.read()
 
 setup(
     name='hostchk',
@@ -18,7 +24,8 @@ setup(
     author='brigxt0 (◣_◢)ⱤEViⱠ(◣_◢)',
     description='A command-line tool for checking HTTP status codes and ' +
                 ' server response headers of URLs',
-    long_description=readme + '\n\n' + history,
+    long_description=long_description,
+    long_description_content_type="text/x-rst" , 
     keywords='hostchk site management www http link check',
     zip_safe=False,
     include_package_data=False,
