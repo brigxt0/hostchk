@@ -22,9 +22,12 @@ setup(
     keywords='hostchk site management www http link check',
     zip_safe=False,
     include_package_data=False,
-
+    python_requires=">=3.7, <4",
+    install_requires=["requests==2.26.0",                              "rich==12.0.1",                                  "tqdm==44.62", 
+                      "urllib3==1.26.7"
+                      ],
     classifiers=[
-        "Development Status :: 5 - Production/Stable",
+        "Development Status :: 3 - Alpha",
         "Environment :: Console",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
