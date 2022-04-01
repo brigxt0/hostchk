@@ -2,7 +2,6 @@
 Hostchk
 =======
 
-
 .. image:: https://img.shields.io/pypi/v/hostchk.svg
         :target: https://pypi.org/project/hostchk/
 
@@ -21,7 +20,6 @@ hostchk is  available on the python repository, PyPI and can be installed using 
 
  $ pip install hostchk
  
-
 Hostchk requires 3rd party packages to run without which it will not run.It can be cloned from GitHub as::
 
     $ git clone https://github.com/brigxt0/hostchk.git
@@ -49,25 +47,29 @@ If you installed your hostchk via pip you can run it from any directory as
 
    -proto PROTOCOL  The protocol to scan with
 
+If you cloned your hostchk directly from Github you can run it as follows
+::
 
-If you cloned your hostchk directly from Github you can run it as follows::
  $ cd hostchk
  $ python -m  hostchk [-h] -in INFILE -out OUTPFILE
  [-proto PROTOCOL]
  
  
-
 Examples
 ~~~~~~~~
-Run the script installed via pip from a directory containing an arbitrary file of urls named hosts.txt while saving to an output file named status.txt with protocol as https.::
+Run the script installed via pip from a directory containing an arbitrary file of urls named hosts.txt while saving to an output file named status.txt with protocol as https.
+::
+
  $ hostchk -in files -out status
 
- 
-Run the script installed via pip from an arbitrary directory which does not contain the input filename named input.txt with protocol set to http.::
+Run the script installed via pip from an arbitrary directory which does not contain the input filename named input.txt with protocol set to http.
+::
+
  $ hostchk -in /path/to/input.txt -out /path/to/output. txt -proto http://
 
- 
-Run the script cloned from Github as a module inside the hostchk directory for an input.txt in the downloads folder ::
+Run the script cloned from Github as a module inside the hostchk directory for an input.txt in the downloads folder. 
+::
+
  $ cd hostchk
  $ python -m hostchk -in ~/storage/downloads/input.txt -out ~/storage/downloads/output.txt
 
