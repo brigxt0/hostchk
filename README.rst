@@ -59,21 +59,18 @@ If you cloned your hostchk directly from Github you can run it as follows::
 
 Examples
 ~~~~~~~~
-Run the script installed via pip from a directory containing an arbitrary file of urls named hosts.txt while saving to an output file named status.txt with protocol as https.
-
-::
+Run the script installed via pip from a directory containing an arbitrary file of urls named hosts.txt while saving to an output file named status.txt with protocol as https.::
  $ hostchk -in files -out status
- 
-Run the script installed via pip from an arbitrary directory which does not contain the input filename named input.txt with protocol set to http.
 
-::
+ 
+Run the script installed via pip from an arbitrary directory which does not contain the input filename named input.txt with protocol set to http.::
  $ hostchk -in /path/to/input.txt -out /path/to/output. txt -proto http://
- 
-Run the script cloned from Github as a module inside the hostchk directory for an input.txt in the downloads folder 
 
-::
+ 
+Run the script cloned from Github as a module inside the hostchk directory for an input.txt in the downloads folder ::
  $ cd hostchk
  $ python -m hostchk -in ~/storage/downloads/input.txt -out ~/storage/downloads/output.txt
+
 
 End
 ---
