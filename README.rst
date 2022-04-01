@@ -26,7 +26,7 @@ cloned from GitHub and run as::
 
     $ git clone https://github.com/brigxt0/hostchk.git
     $ cd hostchk
-    $ pip3 install requirements.txt
+    $ pip3 install -r requirements.txt
     $ python3 hostchk.py -in <input> -out <output> -proto <protocol>
 
 Usage
@@ -60,7 +60,7 @@ Examples
 Run the script in its home directory with url in a file named hosts
 and output file called status with https requests. 
 ::
- python3 hostchk.py -in files -out status -proto https
+ python3 hostchk.py -in files -out status -proto https://
 
 
 
