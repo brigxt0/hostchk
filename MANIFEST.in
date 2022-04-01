@@ -1,0 +1,6 @@
+include *.rst
+recursive-include docs *.rst
+include versioneer.py
+include hostchk/_version.py
+graft hostchk
+recursive-exclude * *.py[co]
