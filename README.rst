@@ -5,8 +5,8 @@ Hostchk
 .. image:: https://img.shields.io/pypi/v/hostchk.svg
         :target: https://pypi.org/project/hostchk/
 
-.. image:: https://img.shields.io/github/license/brigxt0/webchk.svg
-        :target: https://github.com/brigxt0/hostchk/blob/main/LICENSE
+.. image:: https://img.shields.io/github/license/brigxt0/hostchk.svg
+        :target:https://github.com/brigxt0/hostchk/blob/aeded164c0fcf70cf38d09a976b6197ef74a3541/LICENSE
 
 hostchk is a python 3 CLI tool for checking the HTTP
 status codes and server response headers of URLs.As arguments to the script a file of URLs seperated by lines is required . As well as the name of the file in which to save the output.Note by default the output is saved in the same directory as the input. 

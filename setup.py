@@ -30,7 +30,7 @@ setup(
     zip_safe=False,
     include_package_data=False,
     python_requires=">=3.7, <4",
-    install_requires=["requests==2.26.0",                              "rich==12.0.1",                                  "tqdm==4.4.62", 
+    install_requires=["requests==2.26.0",                              "rich==12.0.1",                                  "tqdm==4.62.3", 
                       "urllib3==1.26.7"
                       ],
     classifiers=[
