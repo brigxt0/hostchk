@@ -4,7 +4,7 @@ import pathlib
 
 
 here = pathlib.Path(__file__).parent.resolve()
-long_description = (here / "README.rst").read_text(encoding="utf-8")
+big_desc = (here / "README.rst").read_text(encoding="utf-8")
 
 
 #with open('README.rst') as readme_file:
@@ -24,8 +24,8 @@ setup(
     author='brigxt0 (◣_◢)ⱤEViⱠ(◣_◢)',
     description='A command-line tool for checking HTTP status codes and ' +
                 ' server response headers of URLs',
-    long_description=long_description,
-    long_description_content_type="text/x-rst" , 
+    long_description_content_type="text/x-rst" ,
+    long_description=big_desc , 
     keywords='hostchk site management www http link check',
     zip_safe=False,
     include_package_data=False,

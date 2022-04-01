@@ -137,7 +137,7 @@ args = parser.parse_args()
 myfile = open(args.infile, "r")
 tempfile = open(args.infile, "r")
 lines = tempfile.readlines()
-outfile = open(args.outpfile, "w")
+outfile = open(args.outfile, "w")
 
 
 """if __name__ == "__main__":

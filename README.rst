@@ -1,39 +1,39 @@
-======
+=======
 Hostchk
-======
+=======
 
 
 .. image:: https://img.shields.io/pypi/v/hostchk.svg
         :target: https://pypi.org/project/hostchk/
 
 .. image:: https://img.shields.io/github/license/brigxt0/webchk.svg
-        :target: https://github.com/brigxt0/hostchk/main/LICENSE
+        :target: https://github.com/brigxt0/hostchk/blob/main/LICENSE
 
-hostchk is a command-line tool developed in Python 3 for checking the HTTP
-status codes and response headers of URLs. It requires a file of URLs seperated by lines and the name of the file in which to save the output as
+hostchk is a python 3 CLI tool for checking the HTTP
+status codes and server response headers of URLs.As arguments to the script a file of URLs seperated by lines is required . As well as the name of the file in which to save the output.Note by default the output is saved in the same directory as the input. 
 arguments. Furthermore, the protocol either https or http can be passed using the -proto option to
 process the URLs and check their statuses.
 
 
 Installation
 ------------
-hostchk is not yet available on PyPI and cant be installed using pip for now
+hostchk is  available on the python repository, PyPI and can be installed using pip as follows::
 
+ $ pip install hostchk
+ 
 
-
-Hostchk requires 3rd party packages to run. So it can also be
-cloned from GitHub and run as::
+Hostchk requires 3rd party packages to run without which it will not run.It can be cloned from GitHub as::
 
     $ git clone https://github.com/brigxt0/hostchk.git
     $ cd hostchk
     $ pip3 install -r requirements.txt
-    $ python3 hostchk.py -in <input> -out <output> -proto <protocol>
 
 Usage
 -----
+If you installed your hostchk via pip you can run it from any directory as 
 ::
 
- hostchk.py [-h] -in INFILE -out OUTPFILE
+ hostchk [-h] -in INFILE -out OUTPFILE
 
  [-proto PROTOCOL]
 
@@ -50,36 +50,30 @@ Usage
    -proto PROTOCOL  The protocol to scan with
 
 
-
+If you cloned your hostchk directly from Github you can run it as follows::
+ $ cd hostchk
+ $ python -m  hostchk [-h] -in INFILE -out OUTPFILE
+ [-proto PROTOCOL]
  
  
-
 
 Examples
 ~~~~~~~~
-Run the script in its home directory with url in a file named hosts
-and output file called status with https requests. 
+Run the script installed via pip from a directory containing an arbitrary file of urls named hosts.txt while saving to an output file named status.txt with protocol as https.
+
 ::
- python3 hostchk.py -in files -out status -proto https://
+ $ hostchk -in files -out status
+ 
+Run the script installed via pip from an arbitrary directory which does not contain the input filename named input.txt with protocol set to http.
 
+::
+ $ hostchk -in /path/to/input.txt -out /path/to/output. txt -proto http://
+ 
+Run the script cloned from Github as a module inside the hostchk directory for an input.txt in the downloads folder 
 
+::
+ $ cd hostchk
+ $ python -m hostchk -in ~/storage/downloads/input.txt -out ~/storage/downloads/output.txt
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+End
+---

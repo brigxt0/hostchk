@@ -11,7 +11,7 @@ if __name__ == "__main__":
   myfile = open(args.infile, "r")
   tempfile = open(args.infile, "r")
   lines = tempfile.readlines()
-  outfile = open(args.outpfile, "w")
+  outfile = open(args.outfile, "w")
 
   banner()
   results = bulk_req(myfile, lines)
