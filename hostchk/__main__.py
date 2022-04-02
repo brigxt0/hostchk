@@ -1,8 +1,9 @@
-import argparse 
+import argparse
+import sys
 from .hostchk import get_args, banner, bulk_req, prototype_req 
 
 
-if __name__ == "__main__":
+def main():
   
   """ Entry point to the script. 
   """
@@ -14,6 +15,9 @@ if __name__ == "__main__":
   outfile = open(args.outfile, "w")
 
   banner()
-  results = bulk_req(myfile, lines)
+  return bulk_req(myfile, lines)
+  
+if __name__ =='__main__':
+  sys.exit(main())
   #myfile.close()
   #outfile.close()

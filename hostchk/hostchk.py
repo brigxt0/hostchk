@@ -14,14 +14,14 @@ requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
 
 def banner():
-    print(
+    print(f
         """
         [red] (◣_◢)ⱤEViⱠ(◣_◢) [/] presents 
 [green] _   _           _       _     _
 | | | | ___  ___| |_ ___| |__ | | __
 | |_| |/ _ \/ __| __/ __| '_ \| |/ /
 |  _  | (_) \__ \ || (__| | | |   <
-|_| |_|\___/|___/\__\___|_| |_|_|\_\ [/]  [cyan] @Ver 1.0.1[/]
+|_| |_|\___/|___/\__\___|_| |_|_|\_\ [/]  [cyan] @Ver {__version__}[/]
 
        Mass Host HttpStatusCode Enumeration
        Report bugs :Telegram [blue] @PwrBroka[/]
