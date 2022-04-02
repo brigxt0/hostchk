@@ -8,24 +8,25 @@ from pathlib import Path
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib3.exceptions import InsecureRequestWarning
-
+from . import _version 
 # Suppress only the single warning from urllib3 needed
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
+__version__ = _version.get_versions()['version']
 
 
 def banner():
-    print(f
+    print(
         """
         [red] (◣_◢)ⱤEViⱠ(◣_◢) [/] presents 
 [green] _   _           _       _     _
 | | | | ___  ___| |_ ___| |__ | | __
 | |_| |/ _ \/ __| __/ __| '_ \| |/ /
 |  _  | (_) \__ \ || (__| | | |   <
-|_| |_|\___/|___/\__\___|_| |_|_|\_\ [/]  [cyan] @Ver {__version__}[/]
+|_| |_|\___/|___/\__\___|_| |_|_|\_\ [/]  [cyan] @Ver {}[/]
 
        Mass Host HttpStatusCode Enumeration
        Report bugs :Telegram [blue] @PwrBroka[/]
- """
+ """.format(__version__)
     )
 
 
